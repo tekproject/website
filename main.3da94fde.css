@@ -29,10 +29,14 @@ hgroup,
 main,
 menu,
 nav,
-section,
-summary {
+section
+ {
     display: block
 }
+
+summary {
+    display: list-item;
+  }
 
 audio,
 canvas,
@@ -920,12 +924,32 @@ pre code {
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
-    padding-right: 15px
+    padding-right: 15px;
 }
 
 .main-container{
     margin-left: 20px ;
     margin-right: 20px;
+}
+
+details p {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+}
+
+.main-footer{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.fa-twitter,.fa-linkedin,.fa-instagram,.fa-facebook{
+    color: white;
+}
+.carousel-container{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 80px;
 }
 
 .container:after,
@@ -6042,26 +6066,44 @@ h2.with-project-number .project-number {
     background-color: #f0ad4e
 }
 
-.template-example {
-    margin-bottom: 30px
+.faq-text{
+    color: #14384d;
+    font-size: 18px;
+    font-weight: 600;
 }
 
-.template-example .template-title-example {
+.template-example {
+    margin-bottom: 30px;
+}
+
+.template-example h4{
     font-weight: 400;
+    color: #710a7a
+}
+
+.template-example ul li{
+    font-size: 16px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 600;
+    /* color: #14384d */
+}
+
+ .template-title-example {
+    font-weight: 200;
     color: #34495e
 }
 
-.template-example .template-title-example:after {
+ .template-title-example:after {
     display: none
 }
 
-.template-example h2 {
+/* .template-example h2 {
     font-size: 32px
-}
+} */
 
-.template-example h3 {
+/* .template-example h3 {
     font-size: 20px
-}
+} */
 
 .template-example .table>tbody>tr>td,
 .template-example .table>tbody>tr>th,
